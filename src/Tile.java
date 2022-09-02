@@ -1,9 +1,9 @@
-import javax.rmi.CORBA.Util;
+
 
 public class Tile {
     final char letter;
     final int points;
-    final char blankLetter;
+    char blankLetter;
 
     public Tile(char letter){
         this.letter = letter;
