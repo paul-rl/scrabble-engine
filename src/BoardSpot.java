@@ -1,4 +1,12 @@
 class BoardSpot {
-    char currChar = Constants.EMPTY_SPOT;
-    String specialFeature = Constants.NO_FEATURE;
+    final String SPECIAL_FEATURE;
+    Tile currTile;
+    
+    public BoardSpot(String feature) {
+        SPECIAL_FEATURE = feature;
+    }
+
+    public void setTile(Tile tile) {
+        currTile = tile;
+    }
 }
