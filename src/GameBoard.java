@@ -1,7 +1,12 @@
 class GameBoard {
-    public BoardSpot[][] board = new BoardSpot[Constants.BOARD_LENGTH][Constants.BOARD_LENGTH];
+    public BoardSpot[][] board;
 
-    public void initializeBoard() {
+    public GameBoard(){
+        board = new BoardSpot[Constants.BOARD_LENGTH][Constants.BOARD_LENGTH];
+        initializeBoard();
+    }
+    
+    private void initializeBoard() {
         String[] TOP_LEFT_TO_MID = {
             Constants.TRIPLE_WORD,
             Constants.DOUBLE_WORD,
