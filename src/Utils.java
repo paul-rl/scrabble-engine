@@ -37,7 +37,7 @@ public class Utils {
         letterValues = tempMap;
     }
     
-    public int getValue(char letter){
+    public static int getValue(char letter){
         return letterValues.get(letter);
     }
 }
